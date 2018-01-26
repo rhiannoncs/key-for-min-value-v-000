@@ -3,6 +3,7 @@
 
 def key_for_min_value(name_hash)
   unless name_hash.empty?
+    min_value = name_hash.default
     key_for_min_value.each do |name, value|
       if value < min_value
         min_value = value
@@ -11,4 +12,5 @@ def key_for_min_value(name_hash)
     end
   min_key
   end
+  min_value
 end
